@@ -4,7 +4,6 @@ import (
 	"context"
 	"crypto/ecdsa"
 	"fmt"
-	"runtime"
 	"sync"
 	"sync/atomic"
 
@@ -22,7 +21,7 @@ import (
 
 var (
 	subscriptionWorkers = 32
-	messageWorkers      = runtime.NumCPU()
+	messageWorkers      = 10
 )
 
 const (
