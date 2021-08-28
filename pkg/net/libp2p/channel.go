@@ -20,13 +20,13 @@ import (
 )
 
 var (
-	subscriptionWorkers = 32
-	messageWorkers      = 10
+	subscriptionWorkers = 60
+	messageWorkers      = 60
 )
 
 const (
-	incomingMessageThrottle = 4096
-	messageHandlerThrottle  = 512
+	incomingMessageThrottle = 40960
+	messageHandlerThrottle  = 5120
 )
 
 type channel struct {

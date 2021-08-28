@@ -15,8 +15,8 @@ import (
 const (
 	libp2pMessageSigning              = true
 	libp2pStrictSignatureVerification = true
-	libp2pPeerOutboundQueueSize       = 256
-	libp2pValidationQueueSize         = 4096
+	libp2pPeerOutboundQueueSize       = 2560
+	libp2pValidationQueueSize         = 40960
 )
 
 type channelManager struct {
